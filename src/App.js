@@ -1,6 +1,9 @@
 import "./App.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper";
 import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 export default function App() {
   return (
@@ -54,46 +57,55 @@ export default function App() {
           </p>
           <p className="text-lg text-justify text-white">
             {" "}
-            Pedro fue un luchador. Un resiliente. Una persona positiva, que
-            siempre fue para adelante y que supo sobreponerse a momentos
-            difíciles. Un profesional querido y respetado, y sobre todo, un buen
-            amigo.{" "}
+            Pedro fue un luchador. Un resiliente. Una persona excepcional,
+            positiva, que siempre fue para adelante y que supo sobreponerse a
+            momentos difíciles. Un profesional querido y respetado, y sobre
+            todo, un buen amigo.
           </p>
         </div>
       </div>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
         className="w-11/12 h-1/2"
       >
         <SwiperSlide>
           <img
             src="img1.jpeg"
             alt="Menores de 16"
-            className="w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center rounded-lg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="img2.jpeg"
             alt="Menores de 19"
-            className="w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center rounded-lg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="img3.jpeg"
             alt="Seven de Bahía Blanca"
-            className="w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center rounded-lg"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="img4.jpeg"
             alt="Pedro, Sol y Lupe"
-            className="w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center rounded-lg"
           />
         </SwiperSlide>
       </Swiper>
