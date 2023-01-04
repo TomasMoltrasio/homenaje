@@ -5,41 +5,62 @@ import "swiper/css";
 export default function App() {
   return (
     <div className="h-max flex flex-col justify-start items-center bg-gray-900">
-      <img
-        src="escudo.png"
-        alt="escudo"
-        className="
+      <div className="md:w-11/12 md:h-max flex flex-col w-full md:flex-row justify-start items-center md:mt-5">
+        <img
+          src="escudo.png"
+          alt="escudo"
+          className="
         w-1/6
         h-1/6
         object-contain
         object-center
         mt-10
         mb-10
+        md:mr-10
       "
-      />
-      <h3 className="text-white text-lg text-justify w-11/12 mb-4">
-        Pedro Arsenio Billordo era médico cardiólogo, a cargo del Área de
-        Crecimiento, Desarrollo y Nutrición del Club Los Tilos. Estaba casado
-        con la comunicadora social Soledad Navarro, con quien tuvo a su única
-        hija, Lupe. <br /> Integrante de la camada 80, comenzó a jugar al rugby
-        y a hacer amigos en las divisiones infantiles del Club. Ya en juveniles,
-        se destacó entre sus compañeros por su gran velocidad y forma física.{" "}
-        <br /> En 2002, fue campeón de la URBA con la Menores de 22 entrenada
-        por la Macha Gómez Cabrera, e integrada por las camadas 80, 81 y 82.
-        Pedro fue el tryman del equipo. Al año siguiente arañó el debut en
-        Primera. Jugó un tiempo más en plantel superior hasta su retiro
-        definitivo. <br /> Ya recibido de médico y abocado al desarrollo
-        profesional, continuó vinculado al deporte. Corrió maratones y carreras
-        de montaña, en pruebas de alta exigencia física y mental. La
-        autoexigencia era una constante en Pedro, que afloraba en todo lo que se
-        propusiera. <br /> En los últimos años, impulsó el desarrollo del área
-        de nutrición que él mismo había creado, con el objeto de “potenciar la
-        actividad física y mejorar los hábitos alimenticios”. Su logro es el
-        mejor legado para el Club que lo formó como la hermosa persona que fue.{" "}
-        <br /> Pedro fue un luchador. Un resiliente. Una persona positiva, que
-        siempre fue para adelante y que supo sobreponerse a momentos difíciles.
-        Un profesional querido y respetado, y sobre todo, un buen amigo. <br />
-      </h3>
+        />
+        <div className="w-11/12 h-full flex flex-col justify-center items-center space-y-2 mb-4">
+          <p className="text-lg text-justify text-white">
+            <b className="text-xl font-bold">Pedro Arsenio Billordo</b> era
+            médico cardiólogo, a cargo del Área de Crecimiento, Desarrollo y
+            Nutrición del Club Los Tilos. Estaba casado con la comunicadora
+            social María Soledad Navarro, con quien tuvo a su única hija, Lupe.{" "}
+          </p>
+          <p className="text-lg text-justify text-white">
+            Integrante de la camada 80, comenzó a jugar al rugby y a hacer
+            amigos en las divisiones infantiles del Club. Ya en juveniles, se
+            destacó entre sus compañeros por su gran velocidad y forma física.{" "}
+          </p>
+          <p className="text-lg text-justify text-white">
+            {" "}
+            En 2002, fue campeón de la URBA con la Menores de 22 entrenada por
+            la Macha Gómez Cabrera, e integrada por las camadas 80, 81 y 82.
+            Pedro fue el tryman del equipo. Al año siguiente arañó el debut en
+            Primera. Jugó un tiempo más en plantel superior hasta su retiro
+            definitivo.{" "}
+          </p>
+          <p className="text-lg text-justify text-white">
+            {" "}
+            Ya recibido de médico y abocado al desarrollo profesional, continuó
+            vinculado al deporte. Corrió maratones y carreras de montaña, en
+            pruebas de alta exigencia física y mental. La autoexigencia era una
+            constante en Pedro, que afloraba en todo lo que se propusiera.{" "}
+          </p>
+          <p className="text-lg text-justify text-white">
+            En los últimos años, impulsó el desarrollo del área de nutrición que
+            él mismo había creado, con el objeto de “potenciar la actividad
+            física y mejorar los hábitos alimenticios”. Su logro es el mejor
+            legado para el Club que lo formó como la hermosa persona que fue.{" "}
+          </p>
+          <p className="text-lg text-justify text-white">
+            {" "}
+            Pedro fue un luchador. Un resiliente. Una persona positiva, que
+            siempre fue para adelante y que supo sobreponerse a momentos
+            difíciles. Un profesional querido y respetado, y sobre todo, un buen
+            amigo.{" "}
+          </p>
+        </div>
+      </div>
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
