@@ -69,6 +69,7 @@ export default function App() {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"auto"}
+        rewind={true}
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -105,6 +106,27 @@ export default function App() {
           <img
             src="img4.jpeg"
             alt="Pedro, Sol y Lupe"
+            className="w-full h-full object-contain object-center rounded-lg"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="img5.jpg"
+            alt="Asado"
+            className="w-full h-full object-contain object-center rounded-lg"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="img6.jpg"
+            alt="Para Mosqui de Pedro"
+            className="w-full h-full object-contain object-center rounded-lg"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="img7.jpeg"
+            alt="Juntada"
             className="w-full h-full object-contain object-center rounded-lg"
           />
         </SwiperSlide>
